@@ -1,6 +1,6 @@
+import "./globals.css";
+import Header from "@/components/Header";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
 export const metadata: Metadata = {
   title: "Ruan Pionte",
   description: "Portifolio of Ruan Pionte",
@@ -13,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body data-theme="light" className="bg-primary">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
