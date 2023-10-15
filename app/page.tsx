@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Skils from "@/components/Skils";
 import Image from "next/image";
 
@@ -49,12 +50,22 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-wrap justify-center">
-        <h2 className="text-4xl my-5" id="about">Sobre</h2>
+        <h2 className="text-4xl my-5" id="about">
+          Sobre
+        </h2>
         <About />
       </section>
       <section className="flex flex-wrap justify-center">
-        <h2 className="text-4xl my-5" id="skils">Tecnologias</h2>
+        <h2 className="text-4xl my-5" id="skils">
+          Tecnologias
+        </h2>
         <Skils />
+      </section>
+      <section className="flex flex-wrap justify-center">
+        <h2 className="text-4xl my-5" id="skils">
+          Projetos
+        </h2>
+        <Projects />
       </section>
     </main>
   );
