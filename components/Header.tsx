@@ -22,8 +22,8 @@ function Header() {
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] mt-4  md:mt-0 text-lg">
             {links.map((link) => (
-              <li key={link.name} className="m-3">
-                <a href={link.link}>{link.name}</a>
+              <li key={link.name} className=" m-2">
+                <a className="pb-1  hover:text-white transition-all  duration-150 boder border-transparent hover:border-b-2 hover:border-red-500" href={link.link}>{link.name}</a>
               </li>
             ))}
           </ul>

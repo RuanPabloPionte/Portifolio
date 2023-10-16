@@ -6,9 +6,9 @@ import ButtonGrey from "./ButtonGrey";
 function Projects() {
   return (
     <div className="grid md:grid-cols-2  place-items-center p-4">
-      <div className="m-4 md:h-96 ">
+      <div className="m-4 md:h-96">
         <Image
-          className="rounded-md md:h-80 object-cover"
+          className="rounded-md md:h-80 object-cover "
           src="/Gestor de estoque.png"
           alt=""
           height={600}
@@ -38,10 +38,13 @@ function Projects() {
             </ButtonGrey>
 
             <ButtonGrey>
-              <a href="https://github.com/RuanPabloPionte/gestor-de-estoque" target="_blank" className="flex gap-2">
-
-              <span className="text-md font-semibold ">Code</span>
-              <BsGithub />
+              <a
+                href="https://github.com/RuanPabloPionte/gestor-de-estoque"
+                target="_blank"
+                className="flex gap-2"
+              >
+                <span className="text-md font-semibold ">Code</span>
+                <BsGithub />
               </a>
             </ButtonGrey>
           </div>

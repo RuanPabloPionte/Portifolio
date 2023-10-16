@@ -33,8 +33,12 @@ export default function Home() {
           </div>
 
           {/* icones */}
-          <div className="flex justify-center gap-8">
-            <a href="https://github.com/RuanPabloPionte" target="_blank">
+          <div className="flex justify-center gap-8 ">
+            <a
+              className="hover:scale-125 rounded-full border border-b-transparent hover:border-2 hover:border-black hover:mt-2 transition-all ease"
+              href="https://github.com/RuanPabloPionte"
+              target="_blank"
+            >
               <Image
                 src="/icons8-github-60.png"
                 alt="gitHub-log"
