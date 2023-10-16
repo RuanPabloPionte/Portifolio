@@ -16,8 +16,8 @@ function Header() {
       <nav className="flex justify-between items-center">
         <div className="text-lg md:text-2xl">Ruan Pionte</div>
         <div
-          className={`md:static absolute bg-info right-0
-              ${modalMenu ? "top-[100%] hidden" : "top-9  block"}
+          className={`md:block md:static absolute bg-info left-0
+              ${modalMenu ? " top-[100%] hidden" : " top-9 "}
           t md:w-auto  w-full flex items-center px-5`}
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] mt-4  md:mt-0 text-lg">
