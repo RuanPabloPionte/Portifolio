@@ -38,8 +38,11 @@ function Projects() {
             </ButtonGrey>
 
             <ButtonGrey>
-              <span className="text-md font-semibold">Code</span>
+              <a href="https://github.com/RuanPabloPionte/gestor-de-estoque" target="_blank" className="flex gap-2">
+
+              <span className="text-md font-semibold ">Code</span>
               <BsGithub />
+              </a>
             </ButtonGrey>
           </div>
         </div>

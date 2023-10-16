@@ -34,12 +34,14 @@ export default function Home() {
 
           {/* icones */}
           <div className="flex justify-center gap-8">
-            <Image
-              src="/icons8-github-60.png"
-              alt="gitHub-log"
-              height={50}
-              width={50}
-            />
+            <a href="https://github.com/RuanPabloPionte" target="_blank">
+              <Image
+                src="/icons8-github-60.png"
+                alt="gitHub-log"
+                height={50}
+                width={50}
+              />
+            </a>
             <Image
               src="/icons8-linkedin-logo-96.png"
               alt="linkedin-logo"
