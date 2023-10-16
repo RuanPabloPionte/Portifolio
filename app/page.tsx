@@ -62,13 +62,13 @@ export default function Home() {
         <About />
       </section>
       <section className="flex flex-wrap justify-center">
-        <h2 className="text-4xl my-5" id="skils">
+        <h2 className="text-4xl my-7" id="skils">
           Tecnologias
         </h2>
         <Skils />
       </section>
       <section className="flex flex-wrap justify-center">
-        <h2 className="text-4xl my-5" id="skils">
+        <h2 className="text-4xl my-7" id="skils">
           Projetos
         </h2>
         <Projects />
