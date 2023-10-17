@@ -12,7 +12,7 @@ function Header() {
   const [modalMenu, setModalMenu] = useState(true);
 
   return (
-    <header className="bg-info p-3">
+    <header className="bg-info p-3" id="home">
       <nav className="flex justify-between items-center">
         <div className="text-lg md:text-2xl">Ruan Pionte</div>
         <div
@@ -23,7 +23,12 @@ function Header() {
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] mt-4  md:mt-0 text-lg">
             {links.map((link) => (
               <li key={link.name} className=" m-2">
-                <a className="pb-1  hover:text-white transition-all  duration-150 boder border-transparent hover:border-b-2 hover:border-red-500" href={link.link}>{link.name}</a>
+                <a
+                  className="pb-1  hover:text-white transition-all  duration-150 boder border-transparent hover:border-b-2 hover:border-red-500"
+                  href={link.link}
+                >
+                  {link.name}
+                </a>
               </li>
             ))}
           </ul>

@@ -1,7 +1,9 @@
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import ScrollToTop from "@/components/ScrollBackToTop";
 import Skils from "@/components/Skils";
 import Image from "next/image";
+import { LuArrowUpCircle } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -68,11 +70,12 @@ export default function Home() {
         <Skils />
       </section>
       <section className="flex flex-wrap justify-center">
-        <h2 className="text-4xl my-7" id="skils">
+        <h2 className="text-4xl my-7" id="projects">
           Projetos
         </h2>
         <Projects />
       </section>
+      <ScrollToTop />
     </main>
   );
 }
