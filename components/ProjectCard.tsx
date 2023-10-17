@@ -49,7 +49,7 @@ function ProjectCard({
         <div className="grid grid-cols- place-items-center m-5">
           <div className="flex min-w-[50%] justify-between gap-5 text-xl font-semibold ">
             {technologies.map((tech, index) => (
-              <span key={index} className={`text-${tech.color}`}>
+              <span key={index} className={`${tech.color}`}>
                 {tech.name}
               </span>
             ))}
