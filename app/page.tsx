@@ -69,12 +69,18 @@ export default function Home() {
                 width={50}
               />
             </a>
-            <Image
-              src="/icons8-linkedin-logo-96.png"
-              alt="linkedin-logo"
-              height={50}
-              width={50}
-            />
+            <a
+              className="hover:scale-125 rounded-md border border-b-transparent hover:border-2 hover:border-sky-500 hover:mt-2 transition-all ease"
+              href="https://www.linkedin.com/in/ruanpablopionte"
+              target="_blank"
+            >
+              <Image
+                src="/icons8-linkedin-logo-96.png"
+                alt="linkedin-logo"
+                height={50}
+                width={50}
+              />
+            </a>
           </div>
         </div>
       </motion.section>
