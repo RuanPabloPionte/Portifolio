@@ -1,19 +1,40 @@
+"use client";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import ScrollToTop from "@/components/ScrollBackToTop";
 import Skils from "@/components/Skils";
 import Image from "next/image";
-import { LuArrowUpCircle } from "react-icons/lu";
+import { easeIn, motion } from "framer-motion";
+
+const sectionAnimate = {
+  offscreen: {
+    x: -200,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 
 export default function Home() {
   return (
     <main className="mx-8">
-      <section
+      <motion.section
         className="flex items-center justify-center flex-wrap md:gap-5 pb-6"
         style={{
           minHeight: "100vh",
           // border: "2px solid red",
         }}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ ease: easeIn, duration: 0.7 }}
+        viewport={{ once: true, amount: 0.8 }}
       >
         {/* profile image */}
 
@@ -56,13 +77,13 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
-      <section className="flex flex-wrap justify-center">
+      </motion.section>
+      <motion.section className="flex flex-wrap justify-center">
         <h2 className="text-4xl my-5" id="about">
           Sobre
         </h2>
         <About />
-      </section>
+      </motion.section>
       <section className="flex flex-wrap justify-center">
         <h2 className="text-4xl my-7" id="skils">
           Tecnologias

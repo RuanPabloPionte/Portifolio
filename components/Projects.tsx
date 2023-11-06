@@ -23,10 +23,22 @@ function Projects() {
         description="Este projeto é um clone do Trello, implementado com nextJs, React, React Beautiful DnD e Appwrite para o backend. O aplicativo fornece um sistema intuitivo de gerenciamento de tarefas, permitindo a organização de atividades em colunas, movendo-as conforme necessário."
         technologies={[
           { name: "Nextjs", color: "text-black" },
-          { name: "Bootstrap", color: "text-sky-400" },
+          { name: "Tailwind", color: "text-sky-400" },
         ]}
         demoLink="https://trello-clone-ivory-nine.vercel.app/"
         codeLink="https://github.com/RuanPabloPionte/trello-clone"
+      />
+
+      <ProjectCard
+        imageSrc="/amaro-challenge.png"
+        title="Amaro Challenge"
+        description="Esse projeto é um catálogo de moda interativo desenvolvido com Next.js e React. Explore uma variedade de produtos, verifique seus detalhes, adicione ao carrinho e desfrute de uma experiência de compra online responsiva e atraente. Ele foi inspirado no Amaro front end challenge de 2018 para mais informação é só clicar no botão code"
+        technologies={[
+          { name: "Nextjs", color: "text-black" },
+          { name: "Tailwind", color: "text-sky-400" },
+        ]}
+        demoLink="https://amaro-chalenge.vercel.app/"
+        codeLink="https://github.com/RuanPabloPionte/amaro-chalenge"
       />
     </section>
   );
