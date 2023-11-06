@@ -7,7 +7,6 @@ function Header() {
     { name: "Sobre", link: "#about" },
     { name: "Tecnologias", link: "#skils" },
     { name: "Projetos", link: "#projects" },
-    { name: "Contato", link: "#contact" },
   ];
   const [modalMenu, setModalMenu] = useState(true);
 
