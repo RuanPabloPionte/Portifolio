@@ -6,23 +6,8 @@ import Skils from "@/components/Skils";
 import Image from "next/image";
 import { easeIn, motion } from "framer-motion";
 
-const sectionAnimate = {
-  offscreen: {
-    x: -200,
-    opacity: 0,
-  },
-  onscreen: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
-
 export default function Home() {
+  // console.log(inView);
   return (
     <main className="mx-8">
       <motion.section
@@ -32,9 +17,9 @@ export default function Home() {
           // border: "2px solid red",
         }}
         initial={{ x: -200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{ ease: easeIn, duration: 0.7 }}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         {/* profile image */}
 
@@ -84,24 +69,42 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-      <motion.section className="flex flex-wrap justify-center">
-        <h2 className="text-4xl my-5" id="about">
+      <motion.section
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: easeIn, duration: 0.7 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="flex flex-wrap justify-center"
+      >
+        <h2 className={`text-4xl my-5`} id="about">
           Sobre
         </h2>
         <About />
       </motion.section>
-      <section className="flex flex-wrap justify-center">
+      <motion.section
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: easeIn, duration: 0.7 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="flex flex-wrap justify-center"
+      >
         <h2 className="text-4xl my-7" id="skils">
           Tecnologias
         </h2>
         <Skils />
-      </section>
-      <section className="flex flex-wrap justify-center">
+      </motion.section>
+      <motion.section
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: easeIn, duration: 0.7 }}
+        viewport={{ once: true, amount: 0 }}
+        className="flex flex-wrap justify-center"
+      >
         <h2 className="text-4xl my-7" id="projects">
           Projetos
         </h2>
         <Projects />
-      </section>
+      </motion.section>
       <ScrollToTop />
     </main>
   );
