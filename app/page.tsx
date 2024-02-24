@@ -17,9 +17,8 @@ export default function Home() {
           // border: "2px solid red",
         }}
         initial={{ x: -200, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ ease: easeIn, duration: 0.7 }}
-        viewport={{ once: true, amount: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ ease: easeIn, duration: 0.6 }}
       >
         {/* profile image */}
 
