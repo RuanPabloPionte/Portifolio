@@ -21,12 +21,12 @@ function About() {
       <div className="indent-5 bg-secondary p-8 w-full text-justify rounded-lg text-lg md:text-lg lg:text-2xl md:col-span-2">
         <p>
           Tenho 21 anos e sou morador de Colatina, Espírito Santo. Estou em uma
-          jornada para me tornar um excelente desenvolvedor, transformando
-          ótimas ideias em realidade. Atualmente, curso Sistemas de Informação
-          na Unesc e me especializo em desenvolvimento web na OneBitCode.
+          jornada para me tornar desenvolvedor, transformando ótimas ideias em
+          realidade. Atualmente, curso Sistemas de Informação na Unesc e me
+          especializo em desenvolvimento web na OneBitCode.
         </p>
         <p>
-          No meu tempo livre, aprecio assistir a jogos de futebol, especialmente
+          No meu tempo livre, gosto de assistir jogos de futebol, especialmente
           da Premier League e da Champions League. Também gosto de sair com
           minha família e explorar conteúdos variados no YouTube.
         </p>
