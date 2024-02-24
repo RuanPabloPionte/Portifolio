@@ -20,7 +20,7 @@ function Projects() {
       <ProjectCard
         imageSrc="/Trello.png"
         title="Trello Appwrite"
-        description="Este projeto é um clone do Trello, implementado com nextJs, React, React Beautiful DnD e Appwrite para o backend. O aplicativo fornece um sistema intuitivo de gerenciamento de tarefas, permitindo a organização de atividades em colunas, movendo-as conforme necessário."
+        description="Este projeto é um clone do Trello, implementado com NextJs, Tailwind, React Beautiful DnD e Appwrite para o backend. O aplicativo fornece um sistema intuitivo de gerenciamento de tarefas, permitindo a organização de atividades em colunas, movendo-as conforme necessário."
         technologies={[
           { name: "Nextjs", color: "text-black" },
           { name: "Tailwind", color: "text-sky-400" },

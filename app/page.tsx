@@ -9,7 +9,7 @@ import { easeIn, motion } from "framer-motion";
 export default function Home() {
   // console.log(inView);
   return (
-    <main className="mx-8">
+    <main className="mx-8 sm:mx-1">
       <motion.section
         className="flex items-center justify-center flex-wrap md:gap-5 pb-6"
         style={{
@@ -19,7 +19,7 @@ export default function Home() {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ ease: easeIn, duration: 0.7 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0 }}
       >
         {/* profile image */}
 
@@ -73,7 +73,7 @@ export default function Home() {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ ease: easeIn, duration: 0.7 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0 }}
         className="flex flex-wrap justify-center"
       >
         <h2 className={`text-4xl my-5`} id="about">
@@ -85,7 +85,7 @@ export default function Home() {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ ease: easeIn, duration: 0.7 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0 }}
         className="flex flex-wrap justify-center"
       >
         <h2 className="text-4xl my-7" id="skils">
